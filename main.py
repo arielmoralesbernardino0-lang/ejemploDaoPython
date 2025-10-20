@@ -1,11 +1,14 @@
+import os
+os.system("cls")
 from models.user import User
 from dao.factory import get_dao_from_config
+import pyodbc
 
 def main():
     dao = get_dao_from_config("config.json")
 
-    dao.add_user(User(None, "JSc ", "jusss@example.com"))
-    dao.add_user(User(None, "AMaria", "asere@gmail.com"))
+    dao.add_user(User(None, "lole ", "lusjusss@example.com"))
+    dao.add_user(User(None, "Maria A", "asasetre@gmail.com"))
 
     print("Usuarios almacenados:")
     for u in dao.get_all_users():
