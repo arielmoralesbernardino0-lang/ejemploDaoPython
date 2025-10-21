@@ -1,5 +1,5 @@
 {
-    "dao_type": "mysql",
+    "dao_type": "sqlserver",
     "mysql": {
         "host": "localhost",
         "user": "root",
@@ -11,6 +11,14 @@
     },
     "xml": {
         "filepath": "usuarios.xml"
+    },
+    "sqlserver": {
+        "server": "ARIEL,1433",
+        "database": "mi_base",
+        "username": "sa",
+        "password": "171739",
+        "trusted_connection": true,
+        "driver": "ODBC Driver 17 for SQL Server"
     }
 }
 
